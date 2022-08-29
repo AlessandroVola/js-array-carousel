@@ -8,14 +8,16 @@
 
 body {
     font-family: sans-serif;
+    background-color: black;
 }
 
 /* utilities */
 
 /* content */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 100px auto;
+    border: 30px solid white;
 }
 
 #carousel {
@@ -39,17 +41,22 @@ body {
 
 #carousel-navigator {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 2;
     top: 50%;
     transform: translateY(-50%);
+    height: inherit;
 }
 
 #carousel-navigator button {
-    font-size: 32px;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 15px;
 }
 
 #carousel-navigator button:hover {
-    background-color: yellow;
+    background-color: yellowgreen;
 }
