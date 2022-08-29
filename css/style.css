@@ -1,0 +1,55 @@
+/* generics */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* utilities */
+
+/* content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#carousel {
+    height: 50vh;
+    position: relative;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.item.active {
+    display: inline-block;
+}
+
+#carousel-navigator {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#carousel-navigator button {
+    font-size: 32px;
+}
+
+#carousel-navigator button:hover {
+    background-color: yellow;
+}
