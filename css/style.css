@@ -35,6 +35,7 @@ body {
     display: none;
 }
 
+/* attiva l'inline block */
 .item.active {
     display: inline-block;
 }
